@@ -1,0 +1,157 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 48px;
+}
+
+:root {
+  font-size: 16px;
+}
+
+/* Introduction */
+#intro {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.descriptions {
+  width: 50%;
+}
+
+.title {
+  width: 50%;
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  margin: 0px;
+}
+
+.subtitle {
+  width: 50%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.introduction {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/* Team Card */
+#deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 1024px;
+  margin-top: 38px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+.card:nth-child(3n + 2) {
+  padding-top: 100px;
+}
+
+.crew {
+  display: flex;
+  align-items: flex-start;
+}
+
+.crew figure {
+  margin: 0px;
+}
+
+.crew img {
+  width: 238px;
+  height: 341px;
+}
+
+.crew .role {
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: normal;
+  text-orientation: mixed;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+@media (max-width: 969px) {
+  #intro {
+    flex-direction: column;
+  }
+
+  .descriptions {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  .subtitle {
+    width: 100%;
+    margin-top: 38px;
+  }
+
+  #deck {
+    margin: 38px 0;
+  }
+
+  .card {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .card:nth-child(3n + 2) {
+    padding-top: 0px;
+  }
+
+  .card:nth-child(2n + 0) {
+    padding-top: 100px;
+  }
+
+  .crew img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+}
